@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo-List Site</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="moon-desktop moon-mobile">
+        
+    </header>
+    <div class="container-fluid">
+        <div class="wrapper mt-3 ">
+            <div class="heading my-5 d-flex justify-content-between">
+                <h1>Todo</h1>
+                <img src="/images/icon-moon.svg" class="img-fluid moon" alt="">
+            </div>
+            <div class="create-data mt-1">
+                <div class="create-data-wrapper d-flex">
+                    <div class="form-check ">
+                        <input class="form-check-input"  type="checkbox" value="" id="flexCheckIndeterminate">
+                    </div>
+                    <input type="text" placeholder="Create a new todo..." >
+                </div>
+            </div>
+            <main class="main-body mt-5">
+                <div class="todo-list ">     
+                </div>
+                <div class="footer ">
+                    <div class="content-detail d-flex align-items-center justify-content-between p-2 flex-nowrap">
+                        <p class="mb-0"><span class="list-indicator"></span></p>
+                        <div class="mobile-status first ">
+                            <p class="active all" onclick="showAll()">All</p>
+                            <p onclick="showActive()" class="act">Active</p>
+                            <p onclick="showComplete()" class="com">Completed</p>
+                        </div>
+                        <p class="text-right mb-0 " onclick="clearAll()" >Clear Completed</p>
+                    </div>
+                </div> 
+            </main>
+            <div class="mobile-status-container mt-3 ">
+                <div class="mobile-status ">
+                    <p class="active">All</p>
+                    <p>Active</p>
+                    <p>Completed</p>
+                </div>
+            </div>
+            <div class="last-sentence mt-5">
+                <p class="text-center">Drag and drop to reader list</p>
+            </div>
+            
+        </div>
+    
+    </div>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
