@@ -207,6 +207,7 @@ function showActive() {
             list_indicator.innerHTML = `${uncheck_list.length} items left`
         } 
     }
+    deletor();
     
 }
 function showComplete() {
@@ -264,7 +265,7 @@ function showComplete() {
         }
     }
     
-    
+    deletor();
 }
 function showAll() {
     $('.first .active').removeClass('active');
@@ -288,6 +289,7 @@ function showAll() {
             todo_list.appendChild(comt);
             list_indicator.innerHTML = `${list.length} items left`
         }
+    deletor();
 }
 
 
