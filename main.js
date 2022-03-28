@@ -269,7 +269,8 @@ function showComplete() {
 function showAll() {
     $('.first .active').removeClass('active');
     $('.first .all').addClass('active');
-    
+    check_list = [];
+    uncheck_list = [];
     todo_list.innerHTML = "";
         for(let i = 0; i < list.length;i++) {
             
